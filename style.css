@@ -1,0 +1,172 @@
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* border: 1px solid red */
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body{
+    width: 1500px;
+    width: 100%;
+    /* background-color: #0E1525; */
+}
+:root{
+    --bg-nav:white
+    
+}
+/* header */
+header{
+    background-color: rgb(45, 96, 96);
+    z-index: 5;
+}
+.nav-link{
+    color: var(--bg-nav);
+    font-weight: 600;
+    /* font-size: 24px; */
+}
+.nav-link:hover{
+    color: #FB9B3D;
+    border-bottom: 1px solid;
+    transition:  0.2s ease-in-out;
+}
+.navbar-toggler:focus{
+  color: aliceblue;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+}
+.nav-link i{
+    color: #FB9B3D;
+}
+/* accueil */
+.accueil_wrapper{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.301)), no-repeat center / cover url(images/background\ e-commerce.jpg);
+    background-attachment: fixed; 
+}
+section{
+    padding: 100px 0;
+}
+.img-produit .img-fluid{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.img-produit{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    height: 500px;
+}
+.img-produit .position-absolute{
+    top: 50%; bottom: 0; left: 0; right: 0;
+    color: #fff;
+}
+/* Temoignages */
+#temoignage{
+    background-color: rgb(45, 96, 96);
+}
+footer .img-fluid{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.icon-social i{
+    font-size: 30px;
+    color: rgb(45, 96, 96); ;
+}
+.icon-social i:hover{
+    transition: 0.2s;
+    transform: rotateY('90deg');
+}
+footer{
+    background-color: #ACB4BF;
+}
+footer p{
+    color:  rgb(45, 96, 96);;
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(45, 96, 96);
+}
+.img-produit .btn{
+    background-color:  rgb(45, 96, 96);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+/* connexion */
+#connexion svg{
+    display: flex;
+    margin: auto;
+    color: rgb(45, 96, 96);
+}
+#connexion button{
+    background-color:rgb(45, 96, 96);
+    color: #fff;
+ font-size: 20px;
+}
+#connexion input{
+    border: 1px solid rgb(45, 96, 96);
+}
+#inscription .submit{
+    background-color:rgb(45, 96, 96);
+    color: #fff;
+ font-size: 20px;
+ padding: 5px;
+ border: none;
+ border-radius: 10px;
+}
+#inscription input,textarea{
+    border: 1px solid rgb(45, 96, 96);
+}
+/* liste des produits */
+#produit-liste{
+    background-color: #ACB4BF;
+}
+#produit-liste .carousel-item{
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+}
+#produit-liste .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#produit-liste .carousel-caption {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#produit-liste .carousel-caption .btn{
+    padding: 5px;
+    background: rgb(45, 96, 96);
+    color: #FB9B3D;
+    font-size: 24px;
+    width: 200px;
+}
+#produit-liste .carousel-caption .btn:hover{
+    opacity: 0.7;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer-liste{
+    background-color: rgb(45, 96, 96);
+}
+.footer-liste i{
+    color: #ACB4BF;
+}
+.footer-liste p{
+    color: #ACB4BF;
+}
+.footer-liste a{
+    color: #ACB4BF;
+}
